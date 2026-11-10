@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>连点器 AutoClicker Pro 使用说明</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto; padding: 48px 28px 96px; max-width: 880px;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  font-size: 16px; line-height: 1.85; color: #24292f; background: #ffffff;
+}
+h1 { font-size: 30px; margin: 0 0 8px; padding-bottom: 14px; border-bottom: 3px solid #4f8cff; }
+h2 { font-size: 23px; margin: 44px 0 12px; padding-left: 12px; border-left: 5px solid #4f8cff; }
+h3 { font-size: 19px; margin: 30px 0 10px; color: #1f4fa8; }
+h4 { font-size: 17px; margin: 22px 0 8px; }
+p { margin: 12px 0; }
+ul, ol { margin: 12px 0; padding-left: 26px; }
+li { margin: 6px 0; }
+a { color: #2f6fe4; }
+code {
+  background: #f0f2f7; padding: 2px 6px; border-radius: 5px;
+  font-family: Consolas, "Courier New", monospace; font-size: 14px;
+}
+blockquote {
+  margin: 18px 0; padding: 12px 18px; background: #f3f7ff;
+  border-left: 5px solid #4f8cff; border-radius: 0 8px 8px 0; color: #33405c;
+}
+blockquote p { margin: 6px 0; }
+hr { border: 0; border-top: 1px solid #e3e7ef; margin: 40px 0; }
+table { border-collapse: collapse; margin: 18px 0; width: 100%; }
+th, td { border: 1px solid #dfe3ec; padding: 10px 14px; text-align: left; }
+th { background: #f5f7fb; font-weight: 600; }
+tr:nth-child(even) td { background: #fafbfe; }
+img { max-width: 100%; border: 1px solid #e3e7ef; border-radius: 10px; margin: 14px 0;
+      box-shadow: 0 6px 20px rgba(20, 40, 90, 0.08); }
+.kbd { display: inline-block; padding: 1px 8px; border-radius: 6px; background: #eef2fa;
+       border: 1px solid #ccd6ea; font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+  body { color: #e6e9f0; background: #16181e; }
+  h3 { color: #8fb6ff; }
+  code { background: #262a35; }
+  blockquote { background: #1d2130; color: #c3cad9; }
+  th { background: #22262f; }
+  tr:nth-child(even) td { background: #1b1e26; }
+  th, td { border-color: #333846; }
+  hr { border-top-color: #2b303c; }
+  img { border-color: #2b303c; }
+  .kbd { background: #262a35; border-color: #3a4152; }
+}
+</style>
+</head>
+<body>
+<h1>连点器 AutoClicker Pro 使用说明</h1>
+<blockquote><p>免安装、纯本地运行、不联网、不上传任何数据。 全程点点点和填数字，不需要写一行代码。</p></blockquote>
+<p><img src="assets/icon.png" alt="程序图标"></p>
+<hr>
+<h2>一、怎么打开</h2>
+<ol>
+<li>打开文件夹 <strong>连点器</strong></li>
+<li>双击 <strong>连点器.exe</strong></li>
+<li>如果双击没反应，就双击 <strong>启动连点器.bat</strong>（会多一个黑窗口，能看到出错原因）</li>
+</ol>
+<p>第一次打开会弹一个「三步就能用」的小窗口，看完关掉即可。</p>
+<blockquote><p>想放到桌面：右键 <strong>连点器.exe</strong> → 发送到 → 桌面快捷方式。 想换地方：整个「连点器」文件夹一起复制走就行，配置会跟着走。</p></blockquote>
+<hr>
+<h2>二、三步就能用（最常用玩法）</h2>
+<h3>第 1 步：告诉它点哪里</h3>
+<p>把鼠标移动到你要点的位置（比如游戏里的某个按钮），然后按一下键盘上的 <strong>F9</strong>。</p>
+<p>界面下方会提示「已保存位置……」，位置就存好了。</p>
+<p><img src="docs/screenshots/01_click.png" alt="连点页"></p>
+<h3>第 2 步：设置速度</h3>
+<p>在「连点」页的 <strong>每秒点几下</strong> 里填数字，比如：</p>
+<ul>
+<li>抢购、抢票：填 <strong>20</strong> 到 <strong>50</strong></li>
+<li>游戏挂机、签到：填 <strong>1</strong> 到 <strong>5</strong></li>
+<li>办公重复点击：填 <strong>2</strong> 到 <strong>10</strong></li>
+</ul>
+<p>不确定就用默认的 <strong>10</strong>。</p>
+<h3>第 3 步：按 F6 开始</h3>
+<p>按 <strong>F6</strong> 开始（再按一次暂停），界面右上角的按钮也能点。</p>
+<p><strong>任何时候想停</strong>，按 <strong>ESC</strong>，或者把鼠标一下甩到屏幕<strong>左上角</strong>，两个都是万能急停。</p>
+<hr>
+<h2>三、位置收藏（存很多个点位）</h2>
+<p>切到「位置收藏」页，每个点位是一张卡片。</p>
+<p><img src="docs/screenshots/03_positions.png" alt="位置收藏页"></p>
+<ul>
+<li><strong>F9 快速存点</strong>：鼠标放好按 F9，会存到第一个空位置</li>
+<li><strong>拾取</strong>：点一下按钮，然后鼠标移到目标处<strong>点一下</strong>，就取到了（新手推荐这个）</li>
+<li><strong>去这里</strong>：鼠标立刻移动过去，但<strong>不点击</strong>，用来检查位置对不对</li>
+<li><strong>测试点击</strong>：移过去并<strong>真的点一下</strong></li>
+<li><strong>设为当前目标</strong>：让「连点」页用这个点位</li>
+<li><strong>跟随窗口</strong>：勾上以后，点位记成窗口内的相对坐标。以后窗口移动了、拉大了，点击位置会<strong>自动跟着变</strong>，不会点空</li>
+<li><strong>专属热键</strong>：给这个点位单独设一个键（比如 F1），以后按 F1 就直接点这个位置</li>
+</ul>
+<blockquote><p>每个位置都可以改名字，改完自动保存。关掉软件也不会丢。</p></blockquote>
+<h3>屏幕上的标记（很好用，建议开）</h3>
+<p>在设置里勾上「在屏幕上显示位置标记」以后，屏幕上会直接画出来：</p>
+<ul>
+<li><strong>绿色十字 + 名字</strong>：你存好的位置（当前正在用的那个是绿色，其它是灰色）</li>
+<li><strong>蓝色虚线框</strong>：识别范围</li>
+</ul>
+<p><img src="docs/screenshots/08_overlay.png" alt="屏幕标记与识别范围"></p>
+<h3>迷你悬浮面板</h3>
+<p>点右上角的「迷你面板」，会出现一个半透明小窗：只有开始/停止和实时计数，可以拖到任何地方，永远在最前面。</p>
+<p><img src="docs/screenshots/09_mini_panel.png" alt="迷你悬浮面板"></p>
+<hr>
+<h2>四、智能识别：看到文字 / 图片就自动点（重点功能）</h2>
+<p>这是本次新增的核心功能：<strong>你在框里输入一段文字（或者截一张小图），软件盯着屏幕看，一旦看到，鼠标就自己跑过去点你指定的位置。</strong></p>
+<p>切到「智能识别」页 → 点 <strong>＋ 新建文字识别</strong>。</p>
+<p><img src="docs/screenshots/02_recognize.png" alt="智能识别页"></p>
+<h3>4.1 找文字（OCR）</h3>
+<ol>
+<li>在 <strong>要找的文字</strong> 框里打字，比如 <code>立即抢购</code></li>
+<li>一行一个，可以写多个（比如 <code>立即抢购</code> 和 <code>马上抢</code>，出现任意一个就会触发）</li>
+<li><strong>找到以后</strong> 选：</li>
+</ol>
+<ul>
+<li><strong>点击我保存好的位置</strong> — 点你之前存好的点位（推荐，最稳）</li>
+<li><strong>直接点识别到的地方</strong> — 点文字本身所在的位置，还能用「微调横向/纵向」偏移几个像素</li>
+</ul>
+<ol>
+<li><strong>命中后休息</strong> 填 3 秒，防止疯狂连点同一个按钮</li>
+<li>点 <strong>测试识别</strong> —— 屏幕上会画出红框告诉你找到没有</li>
+<li>都对了以后点 <strong>开始识别</strong></li>
+</ol>
+<blockquote><p><strong>识别范围</strong>：默认全屏。如果屏幕上同样的字太多，点 <strong>框选范围</strong>，在屏幕上拖一个方框，只在这个范围里找。 范围越小，识别越快越准。</p></blockquote>
+<h3>4.2 找图片（截图对比）</h3>
+<p>比找文字更快更准，适合按钮、图标、道具。</p>
+<ol>
+<li>点 <strong>截图取图</strong>，然后在屏幕上把那个按钮<strong>框起来</strong></li>
+<li>模板就存好了（可以加多张）</li>
+<li><strong>相似度</strong> 默认 85%，找不到就往左拉一点（比如 75%）</li>
+</ol>
+<h3>4.3 找颜色</h3>
+<p>填 R、G、B 三个数字，或者点 <strong>从屏幕取色</strong> 直接在屏幕上点一下取色，再调「容差」。</p>
+<p>适合判断血条、进度条、某个色块出现没有。</p>
+<h3>4.4 识别设置</h3>
+<ul>
+<li><strong>多久看一次屏幕</strong>：默认 0.5 秒。想反应更快填 0.2，想让电脑更省力填 1.0</li>
+<li><strong>全局识别范围</strong>：给所有任务统一限定范围</li>
+<li><strong>连点开始时自动一起启动识别</strong>：勾上以后，按 F6 就会连点 + 识别一起跑</li>
+<li><strong>命中时发出提示音</strong>：听到「叮」一声就知道抓到了</li>
+</ul>
+<blockquote><p>注意：识别是<strong>只读屏幕</strong>，不会抢你的鼠标。只有真的命中时才会动鼠标去点一下。</p></blockquote>
+<hr>
+<h2>五、录制回放</h2>
+<p>不想一条条设参数？让它学你操作一遍。</p>
+<p><img src="docs/screenshots/04_record.png" alt="录制回放页"></p>
+<ol>
+<li>点 <strong>● 开始录制</strong></li>
+<li>正常操作一遍：点按钮、打字、滚轮</li>
+<li>回来点 <strong>■ 停止录制</strong></li>
+<li>列表里出现一条录制，点 <strong>▶ 回放</strong> 就能重放</li>
+</ol>
+<ul>
+<li><strong>播放速度</strong>：1 倍速和你当时一样快，2 倍速快一倍</li>
+<li><strong>循环播放</strong>：填 10 就重放 10 遍</li>
+<li><strong>忽略停顿</strong>：勾上以后不等待原来的间隔，飞快执行</li>
+<li><strong>只记录点击和按键</strong>：勾上以后不记鼠标移动路径，更干净</li>
+</ul>
+<hr>
+<h2>六、热键一览（都能改）</h2>
+<table><thead><tr><th>按键</th><th>作用</th></tr></thead><tbody>
+<tr><td><strong>F6</strong></td><td>开始 / 暂停连点</td></tr>
+<tr><td><strong>F7</strong></td><td>单击一次（点一下目标位置）</td></tr>
+<tr><td><strong>F8</strong></td><td>倒计时 3 秒后开始</td></tr>
+<tr><td><strong>F9</strong></td><td>把当前鼠标位置存成点</td></tr>
+<tr><td><strong>F10</strong></td><td>显示 / 隐藏主界面</td></tr>
+<tr><td><strong>ESC</strong></td><td>紧急停止（万能急停）</td></tr>
+<tr><td><strong>Ctrl+Alt+Q</strong></td><td>退出程序</td></tr>
+<tr><td><strong>鼠标侧键 X2</strong></td><td>按住期间持续连点，松开即停</td></tr>
+</tbody></table>
+<p>改法：切到「设置」页 → 全局热键 → 点一下右边的按钮 → <strong>直接按你想用的键</strong>（鼠标侧键也可以）。</p>
+<hr>
+<h2>七、安全提示（建议看一眼）</h2>
+<ul>
+<li><strong>急停一定记得</strong>：ESC 键，和鼠标甩到屏幕左上角</li>
+<li><strong>速度别一上来就拉满</strong>：超过 50 次/秒会弹确认框，太快的连点有可能让某些程序卡住</li>
+<li><strong>只在前台窗口点击</strong>：在「连点」页的高级设置里。勾上并填上目标窗口标题后，只有那个窗口在最前面时才会点，你在别的窗口打字不会被乱点</li>
+<li><strong>后台点击</strong>：勾上以后不抢鼠标，你还能一边点一边用电脑。但<strong>部分程序（尤其游戏）不支持</strong>，试了没反应就取消勾选</li>
+<li><strong>点击没反应的两种情况</strong>：</li>
+</ul>
+<ol>
+<li>目标程序是<strong>以管理员身份运行</strong>的，那连点器也要以管理员运行。设置页有「以管理员身份重启」按钮</li>
+<li>游戏用了反作弊/独占输入，需要在目标程序里把「以管理员运行」关掉，或者改用「后台点击」</li>
+</ol>
+<hr>
+<h2>八、常见问题</h2>
+<p><strong>问：识别文字没找到，怎么办？</strong></p>
+<ol>
+<li>先点「测试识别」，看提示里「这一屏识别到的文字」是什么——如果识别到的文字缺字、错字，说明那块字太小，把<strong>识别范围</strong>框小一点会准很多</li>
+<li>确认要找的文字没有多余空格（程序默认忽略空格，一般不用管）</li>
+<li>屏幕缩放如果特别大（比如 200%），可以把系统缩放调到 150% 再试</li>
+</ol>
+<p><strong>问：文字识别一直提示「引擎不可用」？</strong></p>
+<p>说明系统的中文识别组件没装。可以先用「找图片」功能，效果一样好，而且不需要 OCR。</p>
+<p>装法：Windows 设置 → 时间和语言 → 语言 → 添加语言 → 中文（简体）→ 勾上「光学字符识别」。</p>
+<p><strong>问：鼠标自己动了，我抢不过来怎么办？</strong></p>
+<p>按 ESC，或者把鼠标甩到屏幕左上角。急停之后鼠标完全归你。</p>
+<p><strong>问：关闭窗口后程序不见了？</strong></p>
+<p>默认是<strong>最小化到托盘</strong>了，看屏幕右下角时间旁边的小图标，双击它就能打开。想彻底退出：托盘图标右键 → 退出程序。</p>
+<p>不想要这个行为：设置页 → 通用 → 取消勾选「关闭窗口时最小化到托盘」。</p>
+<p><strong>问：怎么让它到点自动开始？</strong></p>
+<p>设置页 → 计划任务 → 勾选「启用计划任务」，选「每天固定时间」，填 <code>09:00</code>，再填运行多少分钟后自动停。</p>
+<p><strong>问：设置乱了想恢复？</strong></p>
+<ul>
+<li>热键：设置页 → 恢复默认热键</li>
+<li>全部：设置页 → 配置档 → 「另存为」保存一份，乱了一键切回来</li>
+<li>彻底重置：关掉程序，删掉 <code>config</code> 文件夹里的 <code>settings.json</code></li>
+</ul>
+<p><strong>问：怎么卸载？</strong></p>
+<p>直接删除整个「连点器」文件夹。它是绿色的，不写注册表（除非你勾了开机自启，那就在设置页取消勾选）。</p>
+<hr>
+<h2>九、文件夹里都有什么</h2>
+<ul>
+<li><strong>连点器.exe</strong> — 主程序，双击这个</li>
+<li><strong>启动连点器.bat</strong> — 备用启动方式（能看到报错信息）</li>
+<li><strong>app</strong> — 程序源码（想加功能时用，平时不用管）</li>
+<li><strong>runtime</strong> — 自带的 Python 运行环境（不用自己装任何东西）</li>
+<li><strong>config</strong> — 你的所有设置、存好的位置、截的模板图（<strong>要备份就备份这个文件夹</strong>）</li>
+<li><strong>docs/screenshots</strong> — 界面截图</li>
+<li><strong>使用说明.md / 使用说明.html</strong> — 就是这份说明</li>
+</ul>
+<hr>
+<p>*祝你点得开心。记得 ESC 是万能急停。*</p>
+</body>
+</html>

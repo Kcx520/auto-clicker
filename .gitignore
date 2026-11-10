@@ -1,0 +1,19 @@
+# 构建产物（内含整个 Python runtime 与 DLL，177MB，不进仓库）
+dist/
+build/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 日志与临时
+*.log
+logs/
+.pytest_cache/
+
+# 系统
+.DS_Store
+Thumbs.db
